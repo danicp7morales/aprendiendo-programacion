@@ -1,0 +1,32 @@
+#img{
+    color: black;
+}
+
+#img-bordes{
+    color: aqua;
+}
+#img-bordes1{
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(img/flores.jpg) 30 stretch;
+    background-color: aqua;
+}
+
+#img-bordes2{
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(img/flores.jpg) 30 round;
+    background-color: rgb(44, 153, 153);
+}
+#img-bordes3{
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(img/flores.jpg) 100 round;
+    background-color: aquamarine;
+}
+#img-bordes4{
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(img/flores.jpg) ;
+    background-color: rgb(8, 159, 109);
+}

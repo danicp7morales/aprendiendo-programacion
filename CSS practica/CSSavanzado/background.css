@@ -1,0 +1,16 @@
+#example1 {
+  
+    background-image:url(./img/minions-transparent.gif), url(./img/fondo1.jpg);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+    padding: 15px;
+  }
+body{
+    background-color: aqua;
+}
+h1{
+    color: aliceblue;
+}
+h5{
+    color: darkgoldenrod;
+}

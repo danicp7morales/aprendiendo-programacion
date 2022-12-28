@@ -1,0 +1,91 @@
+git --version
+git version 2.30.2.windows.1
+
+Puede descargar Git de forma gratuita desde el siguiente sitio web: https://www.git-scm.com/
+
+git config --global user.name "w3schools-test"
+git config --global user.email "test@w3schools.com"
+
+mkdir hacer s un nuevo directorio .
+
+cd cambia el directorio de trabajo actual .
+
+git init 
+Initialized empty Git repository in /Users/user/myproject/.git/
+
+lsenumerará los archivos en el directorio. Podemos ver que index.htmlestá ahí.
+
+git status
+
+git add index.html
+
+Un README.mdarchivo que describa el repositorio (recomendado para todos los repositorios):
+
+git add --all
+El uso --all en lugar de nombres de archivo individuales cambiará stagetodos los archivos (nuevos, modificados y eliminados).
+
+git add --all is git add -A      //Nota: El comando abreviadoES  git add -A
+
+git commit -m "First release of Hello World!"
+
+Y comprobar el estado de nuestro repositorio. Pero esta vez usaremos la opción --short para 
+ver los cambios de una forma más compacta:
+git status --short
+
+Nota: Los indicadores de estado cortos son:
+
+?? - Archivos sin seguimiento
+A - Archivos agregados al escenario
+M - Archivos modificados
+D - Archivos eliminados
+
+git command -help- Ver todas las opciones disponibles para el comando específico
+git help --all- Ver todos los comandos posibles
+
+
+RAMAS;
+En Git, a branches una versión nueva/separada del repositorio principal.
+
+Entonces creamos un nuevo branch:
+git branch hello-world-images
+
+Confirmemos que hemos creado un nuevo branch:
+git branch
+
+checkoutes el comando utilizado para verificar un archivo branch. 
+Moviéndonos del actual branch, al especificado al final del comando:
+Ahora hemos movido nuestro espacio de trabajo actual de la rama maestra, a la nueva branch
+
+git add --all
+El uso --allen lugar de nombres de archivo individuales organizará todos los archivos modificados
+ (nuevos, modificados y eliminados).
+
+Nota: Al usar la -bopción activada, checkoutse creará una nueva rama y se moverá a ella, si no existe.
+ git checkout -b emergency-fix
+Switched to a new branch 'emergency-fix'
+Ahora hemos creado una nueva rama desde el maestro y la hemos cambiado. Podemos corregir el error
+ de forma segura sin molestar a las otras ramas.
+
+//CAMBIAMOS DE RAMA 
+git checkout master
+Switched to branch 'master'
+
+NOS PARAMOS EN LA RAMA master
+git checkout master
+
+Ahora fusionamos la rama actual (maestra) con la solución de emergencia:
+git merge emergency-fix
+
+Dado que la rama de solución de emergencia provino directamente de master y no se habían 
+realizado otros cambios en master mientras trabajábamos, Git ve esto como una continuación 
+de master. Por lo tanto, puede "Avanzar rápidamente", simplemente apuntando tanto al maestro
+ como al arreglo de emergencia al mismo compromiso.
+
+ ELIMINAMOS LA RAMA DE emergencia
+ git branch -d emergency-fix
+Deleted branch emergency-fix (was dfa79db).
+
+fusionamos RAMAS ...VER mas
+
+
+

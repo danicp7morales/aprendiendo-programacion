@@ -1,0 +1,108 @@
+***********************
+El flujo de GitHub funciona así:
+
+Crear una nueva Sucursal
+Realice cambios y agregue confirmaciones
+Abrir una solicitud de extracción
+Revisar
+Desplegar
+Unir
+
+Empuje el repositorio local a GitHub
+git remote add origin https://github.com/w3schools-test/hello-world.git
+
+Editar código en GitHub
+Intentemos editar el README.mdarchivo en GitHub. Simplemente haga clic en el botón editar:en el 
+lapicito
+
+Git Extraer de GitHub
+Echemos un vistazo más de cerca a cómo funciona fetch, mergey pull.
+
+fetch obtiene todo el historial de cambios de una sucursal/repositorio rastreado.
+Entonces, en su Git local, fetch actualice para ver qué ha cambiado en GitHub:
+
+git fetch origin
+
+git log origin/master
+git diff origin/master
+
+git merge origin/master
+
+//GIT PULL
+Pero, ¿qué sucede si solo desea actualizar su repositorio local, sin pasar por todos esos pasos?
+
+pulles una combinación de fetchy merge. Se utiliza para extraer todos los cambios de un 
+repositorio remoto a la rama en la que está trabajando.
+git pull origin
+
+
+
+git commit -a -m "Updated index.html. Resized image"
+git status
+git push origin
+
+
+
+
+CREA UNA NUEVA SUCURSAL EN GIT GitHub
+
+En GitHub, acceda a su repositorio y haga clic en el botón de rama "maestro".
+BOTON  master
+
+
+En GitHub, acceda a su repositorio y haga clic en el botón de rama "maestro".
+
+Una vez que haya terminado de editar el archivo, puede hacer clic en la pestaña 
+"Vista previa de cambios" para ver los cambios que realizó resaltados:
+el lapicito aen la derecha de la pantalla
+
+Si está satisfecho con el cambio, agregue un comentario que explique lo que hizo y 
+haga clic en Confirmar cambios.  
+ commits change
+
+ ¡Ahora tienes una nueva branchen GitHub, actualizada con algunos cambios!
+
+
+
+ git branch -a
+ Entonces, no tenemos lo nuevo branchen nuestro Git local. Pero sabemos que está
+  disponible en GitHub. 
+ Entonces podemos usar la -aopción para ver todas las sucursales locales y remotas:
+
+ Nota: branch -r es solo para sucursales remotas.
+
+ Y comprobar si está todo actualizado:
+ git pull
+
+ ¿Qué sucursales tenemos ahora y desde dónde estamos trabajando?
+ git branch
+* html-skeleton
+  master
+
+
+  Vaya a GitHub y confirme que el repositorio tiene un nuevo branch:
+
+  Si los cambios se ven bien, puede continuar, creando un pull request:
+
+
+  Dado que este es su propio repositorio, puede  merge realizar su solicitud de extracción usted mismo:
+  merge pull request
+
+  Para evitar que el repositorio se complique demasiado, puede eliminar la rama que ahora no se usa
+   haciendo clic en "Eliminar rama".
+   DELETE BRANCH
+
+*********************
+   El flujo de GitHub funciona así:
+
+Crear una nueva Sucursal
+Realice cambios y agregue confirmaciones
+Abrir una solicitud de extracción
+Revisar
+Desplegar
+Unir
+
+
+
+
+

@@ -1,0 +1,30 @@
+import React from 'react'
+//COMPONENTE PRESENTACIONAL EN EL ABOUT SIEMPRE HABLAMOS DE QUE SE TRATA NUESTRA APLICACION
+//ESTE COMPONENTE SE SUELE MOSTRAR SIEMPRE, SOBRE QUE SE TRATA TODA MI APLICACION
+
+function About() {
+  return (
+    <div>
+<h2>SELECCION ARGENTINA HOME FORMACION
+    <ol>
+      <li>EL DIBU MARTINEZ CAI</li>
+      <li>NAHUEL MOLINA BOCA</li>
+      <li>EL CUTY ROMERO BELGRANO</li>
+      <li>NICOLAS OTAMENDI VELEZ</li>
+      <li>EL HUEVO ACUÑA RACING</li>
+      <li>RODRIGO DE PAUL RACING</li>
+      <li>ENZO FERNANDEZ RIVER</li>
+      <li>ALEXIS MACALISTER BOCA</li>
+      <li>LEONEL MESSI NWELLS</li>
+      <li>ANGEL DI MARIA ROSARIO CENTRAL</li>
+      <li>JULIAN ALVAREZ RIVER</li>
+    </ol>
+    ♠
+
+    </h2>
+
+    </div>
+  )
+}
+
+export default About

@@ -1,0 +1,12 @@
+$color-sass: #7f0542;
+$color-sass-80: #980f5490;/*el 90 ultimo es la opacidad que se le puede agregar asy*/
+
+.bg-sass{
+    background-color:$color-sass;
+    transition:background-color .7s ease-in-out;
+
+    &:hover{
+        background-color: $color-sass-80;
+        border-radius: 7%;
+    }
+}

@@ -1,0 +1,10 @@
+.estilos h3{/*LA CLASE ESTILO AGREGASELA A LOS H3*/
+    padding: 1rem;
+    text-align: left;
+}
+
+.bg-react{/*ESTA ES UNA CLASE DE LOS H3*/
+    background-color:#61dafb;
+}
+
+ 
