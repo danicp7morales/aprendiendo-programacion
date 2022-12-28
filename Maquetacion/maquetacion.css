@@ -1,0 +1,114 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+html{
+    background: #292828;
+}
+
+body{
+    width: 750px;
+    height: 750px;
+    background: orangered;
+    margin: auto;
+    margin-top: 15px;
+}
+
+
+
+
+
+
+
+header{
+    width: 750px;
+    height: 250px;
+    background: grey;
+}
+
+#banner{
+    width: 500px;
+    height: 250px;
+    background: rgb(15, 0, 31) ;
+    float: right;
+}
+
+#logo{
+    height: 125px;
+    width: 250px;
+    background: rgb(111, 7, 238) ;
+}
+
+#buscador{
+    height: 125px;
+    width: 250px;
+    background: rgb(46, 36, 58) ;
+}
+
+
+
+
+
+
+
+nav{
+    height: 50px;
+    background: rgb(26, 177, 200);
+}
+nav ul{
+    list-style: none;
+}
+nav a{
+    color: rgb(239, 239, 239);
+    text-decoration: none;
+    padding: 40px
+
+}
+nav ul li{
+    float: left;
+}
+
+
+
+
+
+main{
+    height: 400px;
+    width: 750px;
+    background: rgb(161, 146, 165);
+}
+
+#ladoIzquierdo{
+    width: 150px;
+    height: 400px;
+    background: #667e17;
+    float: left;
+}
+ 
+article{
+    width: 500px ;
+    height: 400px;
+    background: #9ebacf;
+    float: left;
+}
+
+#ladoDerecho{
+    width: 100px;
+    height: 400px;
+    background: #657827;
+    float: right;
+}
+
+
+
+
+
+
+
+footer{
+    height: 50px;
+    width: 750px;
+    background: rgb(37, 188, 212) ;
+}
+
