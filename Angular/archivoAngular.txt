@@ -1,0 +1,34 @@
+CONCEPTOS BASICOS DE ANGULAR
+
+Luego aprenderá todo lo demás que necesita saber sobre AngularJS:
+
+Eventos, DOM, Formularios, Entrada, Validación, Http y más.
+
+Las expresiones de AngularJS se escriben entre llaves dobles: {{ expression }} .
+
+
+<div ng-app="">
+  <p>My first expression: {{ 5 + 5 }}</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

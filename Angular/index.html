@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    //etiqueta de secuencia de comandos
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="">//ng-app define una aplicación AngularJS.
+ 
+<p>Input something in the input box:</p>
+<p>Name : <input type="text" ng-model="name" placeholder="Enter name here"></p>
+//La directiva ng-model vincula el valor de los controles HTML (entrada, selección, área de texto) a los datos de la aplicación.
+<h1>Hello {{name}}</h1>
+
+<br><br>
+
+<p>Age : <input type="text" ng-model="age" placeholder="Age"></p>
+//La directiva ng-model vincula el valor de los controles HTML (entrada, selección, área de texto) a los datos de la aplicación.
+<h1>Edad {{age}}</h1>
+<br><br>
+
+<p>Apellido : <input type="text" ng-model="apellido" placeholder="Apellido"></p>
+<h1>Apellido {{apellido}}</h1>
+<br><br>
+
+<p>dog : <input type="text" ng-model="dog" placeholder="perrito"></p>
+<h1>Perro {{dog}}</h1>
+<br><br>
+
+<p>cat : <input type="text" ng-model="cat" placeholder="gatito"></p>
+<h1>cat {{cat}}</h1>
+<br><br>
+
+</div>
+
+
+</body>
+</html>

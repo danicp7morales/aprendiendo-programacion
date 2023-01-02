@@ -1,0 +1,239 @@
+SELECT * FROM Customers;
+//eleccionamos todo lo que aiga en Customers
+
+//SELECT
+//*
+//FROM
+//EL NOMBRE DE LA BASE DE DATOS
+
+//                     QUE ES SQL
+SQL significa lenguaje de consulta estructurado
+
+//                 QUE PUEDE HACER SQL
+SQL puede ejecutar consultas contra una base de datos
+SQL puede recuperar datos de una base de datos
+SQL puede insertar registros en una base de datos
+SQL puede actualizar registros en una base de datos
+SQL puede eliminar registros de una base de datos
+SQL puede crear nuevas bases de datos
+SQL puede crear nuevas tablas en una base de datos
+SQL puede crear procedimientos almacenados en una base de datos
+SQL puede crear vistas en una base de datos
+SQL puede establecer permisos en tablas, procedimientos y vistas
+
+
+//      RDBMS:
+RDBMS significa Sistema de gestión de bases de datos relacionales.
+
+Los datos en RDBMS se almacenan en objetos de base de datos llamados tablas. 
+Una tabla es una colección de entradas de datos relacionadas y consta de columnas y filas.
+
+
+//      QUE ES UN CAMPO
+Un campo es una columna en una tabla que está diseñada para mantener información específica 
+sobre cada registro en la tabla.
+
+//      REGISTRO
+ Un registro es una entidad horizontal en una tabla.
+
+
+//      COLUMNA
+Una columna es una entidad vertical en una tabla que contiene toda la información asociada
+ con un campo específico en una tabla.
+
+
+ //       NOTA
+ Las palabras clave de SQL NO distinguen entre mayúsculas y minúsculas:
+  select es lo mismo que SELECT
+
+
+//¿Punto y coma después de las declaraciones SQL?
+
+
+
+Algunos de los comandos SQL más importantes:
+
+       SELECT- extrae datos de una base de datos
+       UPDATE- actualiza datos en una base de datos
+       DELETE- elimina datos de una base de datos
+       INSERT INTO- inserta nuevos datos en una base de datos
+       CREATE DATABASE- crea una nueva base de datos
+       ALTER DATABASE- modifica una base de datos
+       CREATE TABLE- crea una nueva tabla
+       ALTER TABLE- modifica una tabla
+       DROP TABLE- elimina una tabla
+       CREATE INDEX- crea un índice (clave de búsqueda)
+       DROP INDEX- elimina un índice
+
+
+//SELECCIONAR Sintaxis
+
+
+//              ***SELECT***
+      
+      aca especificamos
+SELECT column1, column2, ...
+FROM table_name;
+
+      aca todo 
+SELECT * FROM table_name;
+
+      aca especificamos
+SELECT CustomerName,City FROM Customers;
+
+      aca todo
+SELECT * FROM Customers;
+
+
+//              ***SELECT DISTINCT***
+
+Dentro de una tabla, una columna suele contener muchos 
+valores duplicados; y, a veces, solo desea enumerar los diferentes valores (distintos).
+
+
+// contame la cantidad de country diferentes que haya
+SELECT COUNT(DISTINCT Country) FROM Customers;
+ 21 ME DA
+
+SELECT Count(*) AS DistinctCountries
+FROM (SELECT DISTINCT Country FROM Customers);
+
+  RESULTADO 21 
+  COUNTRIES 
+
+
+comandos principales:
+   (como SELECT, UPDATE, DELETE, INSERT, WHERE)
+
+
+
+
+
+//              ***WHERE***
+La WHEREcláusula se utiliza para filtrar registros.
+
+Se utiliza para extraer solo aquellos registros que cumplen una
+condición específica.
+
+Nota: ¡ La WHEREcláusula no solo se usa en SELECTdeclaraciones,
+ también se usa en UPDATE, DELETE, etc.!
+
+//traeme todos los datos de los mexicanos
+SELECT * FROM Customers
+WHERE Country='Mexico';
+
+
+SQL requiere comillas simples alrededor de valores de texto
+(la mayoría de los sistemas de bases de datos también permitirán dobles comillas).
+
+Sin embargo, los campos numéricos no deben estar entre comillas:
+
+//SELECCIONAMOS EL ID 1 NO MAS
+
+SELECT * FROM Customers
+WHERE CustomerID=1;
+
+
+  *OPERADORES EN LA CLAUSULA DE WHERE
+
+SELECT * FROM Products            =
+WHERE Price = 18;
+
+SELECT * FROM Products
+WHERE Price > 30;
+
+SELECT * FROM Products
+WHERE Price < 30;
+
+SELECT * FROM Products
+WHERE Price >= 30;
+
+SELECT * FROM Products
+WHERE Price <= 30;
+
+SELECT * FROM Products
+WHERE Price <> 18;
+//todos menos el 18
+
+SELECT * FROM Products
+WHERE Price BETWEEN 50 AND 60;
+// este me trae los que esten entre 50 y 60
+
+SELECT * FROM Customers
+WHERE City LIKE 's%';
+//no se...entre sierto rango
+
+SELECT * FROM Customers
+WHERE City IN ('Paris','London');
+//todos los que se encuentren en londres y en paris
+
+
+
+// Los operadores SQL    AND, OR, NOT
+
+//            que se cumplan todas
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition1 AND condition2 AND condition3 ...;
+
+//            que se cumpla alguna
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition1 OR condition2 OR condition3 ...;
+
+//           NO SINTAXIS
+SELECT column1, column2, ...
+FROM table_name
+WHERE NOT condition;
+
+
+La siguiente instrucción SQL selecciona todos los campos de "Clientes" donde el
+país es "Alemania" Y la ciudad es "Berlín":
+//buscame todo lo que me encuentre en de germania y berlin
+                   SELECT * FROM Customers
+                   WHERE Country='Germany' AND City='Berlin';
+
+
+La siguiente instrucción SQL selecciona todos los campos de "Clientes" 
+donde la ciudad es "Berlín" O "München":
+                   SELECT * FROM Customers
+                   WHERE City='Berlin' OR City='München';
+
+
+La siguiente instrucción SQL selecciona todos los campos de 
+"Clientes" donde el país NO es "Alemania":
+                  SELECT * FROM Customers
+                  WHERE NOT Country='Germany';
+
+
+
+//           COMBINANDO  AND OR NOT
+
+La siguiente declaración SQL selecciona todos los campos de "Clientes" 
+donde el país es "Alemania" Y la ciudad debe ser "Berlín" O "München" 
+(use paréntesis para formar expresiones complejas):
+
+SELECT * FROM Customers
+WHERE Country='Germany' AND (City='Berlin' OR City='München');
+
+
+
+La siguiente declaración SQL selecciona todos los campos de "Clientes" 
+donde el país NO es "Alemania" y NO "EE. UU.":
+
+SELECT * FROM Customers
+WHERE NOT Country='Germany' AND NOT Country='USA';
+
+
+
+
+
+
+
+
+
+
+
+
+
+

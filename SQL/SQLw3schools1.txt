@@ -1,0 +1,135 @@
+//      la palabra clave SQL:
+//             ***ORDER BY***
+La ORDER BY palabra clave se utiliza para clasificar el conjunto
+ de resultados en orden ascendente o descendente.
+
+ Para ordenar los registros en orden descendente, 
+ utilice la DESCpalabra clave.
+
+SELECT column1, column2, ...
+FROM table_name
+ORDER BY column1, column2, ... ASC|DESC;
+
+La siguiente instrucción SQL selecciona todos los clientes de la tabla
+ "Clientes", ordenados por la columna "País":
+
+SELECT * FROM Customers
+ORDER BY Country;
+//los ordena alfabeticamente te trae todos los datos 
+//pero ordenados por pais
+
+SELECT * FROM Customers
+ORDER BY Country DESC;
+// al reves del otro
+
+
+
+La siguiente instrucción SQL selecciona todos los clientes de la tabla "Clientes", 
+ordenados por la columna "País" y "Nombre del cliente". Esto quiere decir que ordena
+ por País, pero si algunas filas tienen el mismo País, las ordena por NombreCliente:
+
+SELECT * FROM Customers
+ORDER BY Country, CustomerName;
+//hay una doble seleccion
+
+
+La siguiente instrucción SQL selecciona todos los clientes de la tabla
+ "Clientes", ordenados de forma ascendente por el "País" y descendente por la columna "Nombre del cliente":
+
+SELECT * FROM Customers
+ORDER BY Country ASC, CustomerName DESC;
+
+
+//           ***INSERT INTO***
+
+La INSERT INTOdeclaración se utiliza para insertar 
+nuevos registros en una tabla.
+
+Es posible escribir la INSERT INTO declaración de dos maneras:
+
+1. Especifique tanto los nombres de las columnas como 
+los valores que se insertarán:
+
+INSERT INTO table_name (column1, column2, column3, ...)
+VALUES (value1, value2, value3, ...);
+
+
+
+2. Si está agregando valores para todas las columnas de la tabla, no necesita especificar los nombres
+ de las columnas en la consulta SQL
+
+INSERT INTO table_name
+VALUES (value1, value2, value3, ...);
+
+// ya existe customers solo estoy agregando
+INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)
+VALUES ('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway');
+
+
+¿Notó que no insertamos ningún número en el campo CustomerID?
+La columna CustomerID es un campo de incremento automático y se 
+generará automáticamente cuando se inserte un nuevo registro en la tabla.
+
+//INSERTAR SOLO EN COLUMNAS ESPECIFICAS
+
+INSERT INTO Customers (CustomerName, City, Country)
+VALUES ('Cardinal', 'Stavanger', 'Norway');
+//los valores que no se llenen quedaran en null
+
+
+
+//                ***NULL***
+Un campo con un valor NULL es un campo sin valor.
+
+Nota: Un valor NULL es diferente de un valor cero o 
+un campo que contiene espacios. ¡Un campo con un valor NULO es uno que se ha dejado en blanco durante la creación del registro!
+
+¿Cómo probar valores NULL?
+Tendremos que usar los operadores IS NULL y en su lugar. IS NOT NULL
+
+//       ES NULL sintaxis
+SELECT column_names
+FROM table_name
+WHERE column_name IS NULL;
+
+
+//       NO ES NULO sintaxis
+SELECT column_names
+FROM table_name
+WHERE column_name IS NOT NULL;
+
+Sugerencia: utilice siempre IS NULL para buscar valores NULL.
+
+
+//El siguiente SQL enumera todos los clientes 
+//con un valor en el campo "Dirección":
+SELECT CustomerName, ContactName, Address
+FROM Customers
+WHERE Address IS NOT NULL;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

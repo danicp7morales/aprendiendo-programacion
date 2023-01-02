@@ -1,0 +1,36 @@
+/*La propiedad CSS background-sizele permite especificar el tamaño de 
+las imágenes de fondo.*/
+
+
+
+
+
+
+
+
+
+
+
+
+#example1 {
+  /*
+    background-image:url(./img/minions-transparent.gif), url(./img/fondo1.jpg);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+    padding: 15px;
+    */
+    /*simplificamos el codigo*/
+    background: url(./img/minions-transparent.gif) right bottom no-repeat, 
+    url(./img/fondo1.jpg) left top repeat;
+    padding: 15px;
+  }
+body{
+    background-color: aqua;
+}
+h1{
+    color: aliceblue;
+}
+h5{
+    color: darkgoldenrod;
+}
+

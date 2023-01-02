@@ -1,0 +1,136 @@
+tsc
+  Compila el proyecto actual (tsconfig.json en el directorio de trabajo).
+
+  tsc app.ts util.ts
+  Ignorando tsconfig.json, compila los archivos especificados con el valor predeterminado
+opciones del compilador.
+
+  tsc-b
+  Cree un proyecto compuesto en el directorio de trabajo.
+
+  tsc--init
+  Crea un tsconfig.json con la configuración recomendada en el directorio de trabajo.
+
+  tsc -p ./ruta/a/tsconfig.json
+  Compila el proyecto de TypeScript ubicado en la ruta especificada.
+
+  tsc --ayuda --todos
+  Una versión ampliada de esta información, que muestra todas las opciones posibles del compilador
+
+  tsc--noEmit
+  tsc --objetivo siguiente
+  Compila el proyecto actual, con configuraciones adicionales.
+
+BANDERAS DE LÍNEA DE COMANDO
+
+--ayuda, -h
+Imprime este mensaje.
+
+--mirar, -w
+Ver archivos de entrada.
+
+--todos
+Mostrar todas las opciones del compilador.
+
+--versión, -v
+Imprime la versión del compilador.
+
+--en eso
+Inicializa un proyecto de TypeScript y crea un archivo tsconfig.json.
+
+--proyecto, -p
+Compile el proyecto dada la ruta a su archivo de configuración, o para
+una carpeta con un 'tsconfig.json'.
+
+--construir, -b
+Cree uno o más proyectos y sus dependencias, si están desactualizados
+
+--showConfig
+Imprime la configuración final en lugar de construir.
+
+OPCIONES COMUNES DEL COMPILADOR
+
+--bastante
+Habilite el color y el formato en la salida de TypeScript para hacer el compilador
+errores más fáciles de leer.
+tipo: booleano
+predeterminado: verdadero
+
+--objetivo, -t
+Establezca la versión del lenguaje JavaScript para el JavaScript emitido e incluya declaraciones de biblioteca compatibles.
+uno de: es3, es5, es6/es2015, es2016, es2017, es2018, es2019, es2020, es2021, es2022, esnext
+predeterminado: es3
+
+--módulo, -m
+Especifique qué código de módulo se genera.
+uno de: ninguno, commonjs, amd, umd, system, es6/es2015, es2020, es2022, esnext, node16, nodenext
+predeterminado: indefinido
+
+--lib
+Especifique un conjunto de archivos de declaración de biblioteca agrupados que describan el entorno de tiempo de ejecución de destino.
+uno o más: es5, es6/es2015, es7/es2016, es2017, es2018, es2019, es2020, es2021, es2022, esnext, dom, dom.iterable, webworker, webworker.importscripts, webworker.iterable, scripthost, es2015.core, es2015.colección, es2015.generador, es2015.iterable, es2015.promise, es2015.proxy, es2015.reflect, es2015.symbol, es2015.symbol.wellknown, es2016.array.include, es2017.object, es2017.sharedmemory, es2017. cadena, es2017.intl, es2017.typedarrays, es2018.asyncgenerator, es2018.asynciterable/esnext.asynciterable, es2018.intl, es2018.promise, es2018.regexp, es2019.array, es2019.object, es2019.string, es2019.symbol/ esnext.symbol, es2019.intl, es2020.bigint/esnext.bigint, es2020.date, es2020.promise, es2020.sharedmemory, es2020.string, es2020.symbol.wellknown, es2020.intl, es2020.number, es2021.promise/ esnext.promise, es2021.string, es2021.weakref/esnext.weakref, es2021.intl, es2022.array/esnext.array, es2022.error, es2022.intl, es2022.object, es2022.sharedmemory, es2022.string/esnext. cadena, esne xt.intl
+predeterminado: indefinido
+
+--permitirJs
+Permita que los archivos JavaScript sean parte de su programa. Use la opción 'checkJS' para obtener errores de estos archivos.
+tipo: booleano
+predeterminado: falso
+
+--checkJs
+Habilite el informe de errores en archivos JavaScript con verificación de tipo.
+tipo: booleano
+predeterminado: falso
+
+--jsx
+Especifique qué código JSX se genera.
+uno de: preservar, reaccionar, reaccionar nativo, reaccionar-jsx, reaccionar-jsxdev
+predeterminado: indefinido
+
+--declaración, -d
+Genere archivos .d.ts a partir de archivos TypeScript y JavaScript en su proyecto.
+tipo: booleano
+predeterminado: `falso`, a menos que se establezca `compuesto`
+
+--declarationMap
+Cree mapas de origen para archivos d.ts.
+tipo: booleano
+predeterminado: falso
+
+--emitDeclarationOnly
+Solo genera archivos d.ts y no archivos JavaScript.
+tipo: booleano
+predeterminado: falso
+
+--sourceMap
+Cree archivos de mapas de origen para los archivos JavaScript emitidos.
+tipo: booleano
+predeterminado: falso
+
+--outFile
+Especifique un archivo que agrupe todas las salidas en un archivo JavaScript. Si 'declaración' es verdadera, también designa un archivo que agrupa toda la salida .d.ts.
+
+--outDir
+Especifique una carpeta de salida para todos los archivos emitidos.
+
+--removeComentarios
+Deshabilitar la emisión de comentarios.
+tipo: booleano
+predeterminado: falso
+
+--noEmit
+Deshabilite la emisión de archivos de una compilación.
+tipo: booleano
+predeterminado: falso
+
+--estricto
+Habilite todas las opciones estrictas de verificación de tipos.
+tipo: booleano
+predeterminado: falso
+
+--tipos
+Especifique los nombres de los paquetes de tipo que se incluirán sin que se haga referencia a ellos en un archivo de origen.
+
+--esModuleInterop
+Emita JavaScript adicional para facilitar la compatibilidad con la importación de módulos CommonJS. Esto habilita 'allowSyntheticDefaultImports' para la compatibilidad de tipos.
+tipo: booleano
+predeterminado: falso

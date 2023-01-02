@@ -9,7 +9,10 @@ const productsNombres = [
     {id: 4, nombre: 'Plancha',     price:21, seller:'ludmila'},
     {id: 5, nombre: 'Microondas',  price:65, seller:'aylen'}
    
-];
+]
+
+//let id = 6
+
  /*
 const productsElectrinica = [
     {id:1 , nombre: 'netoobook', price:72},
@@ -20,7 +23,7 @@ const productsElectrinica = [
 ]
 */
 
-//let id = 6;
+
 //FUNCIONES CONTROLLADORES
 
 //AGREGA PRODUCTOS A MI BASE DE DATOS

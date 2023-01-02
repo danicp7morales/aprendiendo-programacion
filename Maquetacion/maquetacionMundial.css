@@ -1,0 +1,113 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+html{
+    background: #292828;
+}
+
+body{
+    width: 1000px;
+    height: 1000px;
+    background: rgb(0, 204, 255);
+    margin: auto;
+    margin-top: 15px;
+}
+
+
+
+
+
+
+
+header{
+    width: 1000px;
+    height: 300px;
+    background: grey;
+}
+
+#banner{
+    width: 500px;
+    height: 250px;
+    background: rgb(214, 207, 223) ;
+    float: right;
+}
+
+#logo{
+    height: 125px;
+    width: 250px;
+    background: rgb(137, 199, 198) ;
+}
+
+#buscador{
+    height: 125px;
+    width: 250px;
+    background: rgb(88, 176, 188) ;
+}
+
+
+
+
+
+
+
+nav{
+    height: 50px;
+    background: rgb(22, 28, 94);
+}
+nav ul{
+    list-style: none;
+}
+nav a{
+    color: rgb(239, 239, 239);
+    text-decoration: none;
+    padding: 40px
+
+}
+nav ul li{
+    float: left;
+}
+
+
+
+
+
+main{
+    height: 500px;
+    width: 1000px;
+    background: rgb(8, 59, 155);
+}
+
+#ladoIzquierdo{
+    width: 200px;
+    height: 500px;
+    background: #acd81b;
+    float: left;
+}
+ 
+article{
+    width: 700px ;
+    height: 500px;
+    background: #caced1;
+    float: left;
+}
+
+#ladoDerecho{
+    width: 100px;
+    height: 500px;
+    background: #657827;
+    float: right;
+}
+
+
+
+
+
+
+
+footer{
+    height: 150px;
+    width: 1000px;
+    background: rgb(37, 188, 212) ;
+}

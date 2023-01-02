@@ -1,0 +1,30 @@
+/*body {
+    background-image: url("./img/pokem1.jpg");
+    background-repeat: no-repeat;/*si es que la imagen es chiquita*/
+    /*background-position: right top;
+    background-attachment: scroll;
+   
+  }*/
+
+  /*
+body{
+    background-image: url("img/pokemon.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 200px;
+}
+  */
+ 
+  
+  body {
+    background-image: url("img/newtwo.jpg");
+    background-repeat: no-repeat;/*si es que la imagen es chiquita
+    color:ghostwhite
+  }
+
+
+/*
+  body {
+    background: url("img/newtwo.jpg") no-repeat right top;
+    color: antiquewhite;
+  }*/
