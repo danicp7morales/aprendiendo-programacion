@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body{
+    background-color: black;
+  }
+
+  h1{
+    color: antiquewhite;
+    text-align: center;
+  }
+#grad1 {
+  height: 250px;
+  width: 400px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: radial-gradient(red, yellow, green);
+}
+
+#grad2 {
+  height: 250px;
+  width: 400px;
+  background-color: rgb(21, 0, 255); /* For browsers that do not support gradients */
+  background-image: radial-gradient(rgb(38, 0, 255) 5%, rgb(0, 217, 255) 15%, rgb(0, 0, 0) 60%);
+}
+
+#grad3 {
+  height: 250px;
+  width: 400px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: radial-gradient(red, yellow, green);
+}
+
+#grad4 {
+  height: 250px;
+  width: 400px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: radial-gradient(circle, red, yellow, green);
+}
+
+#grad5 {
+  height: 250px;
+  width: 400px;
+  background-color: rgb(0, 255, 17); /* For browsers that do not support gradients */
+  background-image: repeating-radial-gradient(rgb(0, 255, 17), yellow 10%, rgb(13, 16, 13) 15%);
+}
+</style>
+</head>
+<body>
+
+<h1>Radial Gradient - Evenly Spaced Color Stops</h1>
+
+<div id="grad1"></div><br><br>
+<div id="grad2"></div><br>
+<div id="grad3"></div><br>
+<div id="grad4"></div>br
+<div id="grad5"></div>
+
+</body>
+</html>

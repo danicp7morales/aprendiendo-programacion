@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+  background-image: url("../img/fondo2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div.ex3 {
+  color: blue;
+  border: 10px solid currentcolor;
+}
+
+div.ex1 { 
+  background-color: lightgreen;
+  border: 2px solid black;
+  padding: 15px;
+}
+
+div.ex2 { 
+  background-color: transparent;
+  border: 2px solid rgb(2, 25, 42);
+  padding: 15px;
+} 
+
+div.ex4 {
+  border: 2px solid red;
+}
+
+span {
+  border: inherit;
+}
+
+#p1 {background-color:rgb(255,0,0);opacity:0.6;}
+#p2 {background-color:rgb(0,255,0);opacity:0.6;}
+#p3 {background-color:rgb(0,0,255);opacity:0.6;}
+#p4 {background-color:rgb(192,192,192);opacity:0.6;}
+#p5 {background-color:rgb(255,255,0);opacity:0.6;}
+#p6 {background-color:rgb(255,0,255);opacity:0.6;}
+</style>
+</head>
+<body>
+
+<h1>Define la Opacity</h1>
+
+<p id="p1">Red</p>
+<p id="p2">Green</p>
+<p id="p3">Blue</p>
+<p id="p4">Grey</p>
+<p id="p5">Yellow</p>
+<p id="p6">Cerise</p>
+
+<h2>The transparent Keyword</h2>
+
+<div class="ex1">This div has a light green background.</div>
+<br>
+<div class="ex3">This div has a light green background.                 currentcolor</div>
+<br>
+
+<div class="ex2">La transparent palabra clave se utiliza para hacer que un color sea transparente. Esto se usa a menudo para hacer un color de fondo transparente para un elemento. TRAMSPARENT.</div>
+<br>
+<div class="ex4">Here, the <span>La inherit palabra clave especifica que una propiedad debe heredar su valor de su elemento principal.</span> border settings will be inherited from the parent element.</div>
+<br>
+
+<div class="ex4" style="border:2px dotted blue;">Here, the <span>span element's</span> border settings will also be inherited from the parent element.</div>
+
+</body>
+</html>

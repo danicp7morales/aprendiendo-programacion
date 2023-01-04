@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 300px;
+  height: 100px;
+  background-color: rgb(0, 255, 60);
+  border: 1px solid black;
+  transform: translate(50px,100px);
+}
+div#myDiv {
+  transform: rotate(50deg);
+}
+
+.ver {
+  margin: 150px;
+  width: 200px;
+  height: 100px;
+  background-color: rgb(0, 234, 255);
+  border: 1px solid black;
+  transform: scale(2,4);
+}
+
+.ver1 {
+  margin: 150px;
+  width: 200px;
+  height: 100px;
+  background-color: rgb(183, 0, 255);
+  border: 1px solid black;
+  transform: scaleX(3);
+}
+
+.ver2{
+  margin: 150px;
+  width: 200px;
+  height: 100px;
+  background-color: rgb(255, 0, 93);
+  border: 1px solid black;
+  transform: scaleX(0.5);
+}
+
+.ver3 {
+  margin: 150px;
+  width: 200px;
+  height: 100px;
+  background-color: rgb(6, 42, 6);
+  border: 1px solid black;
+  transform: scaleY(3);
+}
+</style>
+</head>
+<body>
+
+<h1>Las transformaciones CSS le permiten mover, rotar, escalar y sesgar elementos.</h1>
+<p>The translate() method moves an element from its current position:</p>
+
+<div><p>mover</p>
+This div element is moved 50 pixels to the right, and 100 pixels down from its current position.
+</div>
+<div id="myDiv"><p>rotar -20  20 va hacia un lado o hacia otro</p>
+    This div element is rotated clockwise 20 degrees.
+    </div>
+    
+<div class="ver">This div element is two times of its original width, and three times of its original height.</div>
+
+<div class="ver1">This div element is two times of its original width.</div>
+<div class="ver2">This div element is two times of its original width.</div><br>
+<div class="ver3">This div element is two times of its original width.</div><br>
+    
+</body>
+</html>
